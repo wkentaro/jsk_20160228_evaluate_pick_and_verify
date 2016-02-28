@@ -3,3 +3,7 @@ layout
 a          0.3       -0.2
 o          0.2       -0.5
 p          0.5        0.2
+
+success_graspone: 25/30
+success_detect: 10/30
+success_verify: 15/30
