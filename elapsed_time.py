@@ -6,7 +6,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 
-csv_file = '2016-02-26.csv'
+csv_file = 'data.csv'
 df = pd.read_csv(csv_file)
 
 time_cols = [col for col in df.columns if col.startswith('time')]
