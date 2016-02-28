@@ -5,5 +5,14 @@ o          0.2       -0.5
 p          0.5        0.2
 
 success_graspone: 25/30
+    p: 8 / 10
+    a: 8 / 10
+    o: 9 / 10
 success_detect: 10/30
-success_verify: 15/30
+    p: 5 / 10
+    a: 3 / 10
+    o: 2 / 10
+success_verify: 25/25
+    p: 8 / 8
+    a: 8 / 8
+    o: 9 / 9
