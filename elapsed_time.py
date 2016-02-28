@@ -13,6 +13,9 @@ time_cols = [col for col in df.columns if col.startswith('time')]
 df_time = df[time_cols]
 df_time_ratio = df_time.div(df_time.sum(axis=1), axis='index')
 df_time_ratio.columns = [col.split('time_')[-1] for col in time_cols]
+
+print(df_time_ratio.mean())
+
 time_rows = []
 for i, row in df_time_ratio.iterrows():
     for action in ['detect', 'pick', 'verify', 'place', 'return']:
