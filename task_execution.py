@@ -13,7 +13,7 @@ print df.groupby('layout')[['verify', 'no_verify']].mean()
 n_data = len(df)
 success_graspone = df.query('not (verify == 0 and no_verify == 0)')
 success_detect = df.query('no_verify == 1')
-success_verify = df.query('not (verify == 0 and no_verify == 0) and verify != -1')
+success_verify = df.query('(verify == 0 and no_verify == -1) or (verify == 1 and no_verify == 1)')
 need_verify = df.query('no_verify != 0')
 
 print('''
